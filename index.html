@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Game</title>
+    <title>Dodge Bomber</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel = "stylesheet" type = "text/css" href = "style.css"/>
+    <link rel = "stylesheet" type = "text/css" href = "alertbox.css"/>
+    <script src="alertbox.js"></script>
+    <meta charset="utf-8">
 </head>
 <body>
-    <div class = "container">
-        <embed src = "NewTopDownShooter.swf">
+
+    <div id = "dialogoverlay"></div>
+    <div id = "dialogbox">
+        <div>
+            <div id = "dialogboxhead"></div>
+            <div id = "dialogboxbody"></div>
+            <div id = "dialogboxfoot"></div>
+        </div>
     </div>
+    <div class = "container">
+
+        <embed src = "NewTopDownShooter.swf">
+            <button type = "submit" class = "btn-success" onClick = "Alert.render('Use the Arrow Keys to move Dodge Bomber and the Spacebar to shoot.')">How to play</button>
+
+    </div>
+
 
 </body>
 </html>
